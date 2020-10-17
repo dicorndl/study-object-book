@@ -10,6 +10,6 @@ public class PercentDiscountPolicy implements DiscountPolicy {
 
   @Override
   public int getDiscountAmount(int price) {
-    return price * (percent / 100);
+    return price / 100 * percent;
   }
 }
