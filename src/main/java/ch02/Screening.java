@@ -38,4 +38,10 @@ public class Screening {
     return (startTime.equals(start) || startTime.isAfter(start))
         && (startTime.equals(end) || startTime.isBefore(end));
   }
+
+  public String info() {
+    return "제목 : " + movie.getTitle() + "\n"
+        + "상영정보 : " + startAt.toLocalDate() + " "
+        + seq + "회 " + startAt.toLocalTime() + " ~ " + movie.endAt(startAt).toLocalTime() + "\n";
+  }
 }

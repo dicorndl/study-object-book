@@ -13,4 +13,11 @@ public class Reservation {
     this.fullMoney = fullMoney;
     this.purchasedMoney = purchasedMoney;
   }
+
+  public String info() {
+    return screening.info()
+        + "인원 : " + numOfPerson + "\n"
+        + "정가 : " + fullMoney + "\n"
+        + "결재 금액 : " + purchasedMoney + "\n";
+  }
 }

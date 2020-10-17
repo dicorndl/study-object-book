@@ -43,7 +43,7 @@ public class Movie {
     return title;
   }
 
-  public LocalDateTime getEndTime(final LocalDateTime startAt) {
+  public LocalDateTime endAt(final LocalDateTime startAt) {
     return startAt.plus(runningTime);
   }
 
