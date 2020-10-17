@@ -26,12 +26,12 @@ public class Movie {
   }
 
   public int calculateDiscountedPrice(final Screening screening, final int numOfPerson) {
-    int calculatedPricee = price;
+    int calculatedPrice = price;
     if (checkDiscountCondition(screening)) {
-      calculatedPricee = price - discountPolicy.getDiscountAmount(price);
+      calculatedPrice = price - discountPolicy.getDiscountAmount(price);
     }
 
-    return calculatedPricee * numOfPerson;
+    return calculatedPrice * numOfPerson;
   }
 
   private boolean checkDiscountCondition(final Screening screening) {
